@@ -1,0 +1,155 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-size: 0.8rem;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+.resume {
+    /* height: 100vh; */
+    max-width: 800px;
+    margin: 20px auto;
+    /* padding: 20px; */
+    background-color: #fff;
+    /* border-radius: 10px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    /* text-align: center; */
+    background-color: #B9D9F2;
+    color: black;
+    /* border-radius: 10px 10px 0 0; */
+    font-weight: bold;
+    padding: 20px;
+    
+ 
+
+}
+
+.contact{
+    text-align: right;
+}
+
+.name {
+    font-size: 36px;
+}
+
+.job-title {
+    font-size: 24px;
+}
+
+.about{
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.skills{
+    margin: 30px;
+    
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.skills h2{
+    
+    grid-column: span 3;
+}
+
+.skills p{
+    list-style-type: none;
+    font-weight: lighter;
+    
+
+    
+}
+
+.experience{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 20px 100px;
+    grid-gap: 2rem;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.204);
+    padding-bottom: 50px;
+
+}
+
+.experience h2{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+h1{
+    grid-column: span 2;
+}
+
+.education{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 20px 50px;
+    grid-gap: 2rem;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.education h2{
+    grid-column: span 2;
+}
+
+.contact-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.me{
+ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid;
+    margin: 30px;
+}
+
+.country{
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+/* 768 piksel ve daha küçük ekranlar için stil ayarları */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .job-title {
+        font-size: 20px;
+    }
+}
