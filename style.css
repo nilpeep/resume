@@ -60,32 +60,24 @@ header {
 
 .skills{
     margin: 30px;
+   
+
     
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     
 }
 
-.skills h2{
-    
-    grid-column: span 3;
-}
-
-.skills p{
-    list-style-type: none;
+.myskills{
     font-weight: lighter;
-    
-
-    
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
+
 
 .experience{
     margin: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 20px 100px;
-    grid-gap: 2rem;
+    
     background-color: #fff;
     padding: 20px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.204);
@@ -104,17 +96,12 @@ h1{
 
 .education{
     margin: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 20px 50px;
-    grid-gap: 2rem;
+  
     padding: 20px;
     padding-bottom: 50px;
 }
 
-.education h2{
-    grid-column: span 2;
-}
+
 
 .contact-link {
     color: #000000;
@@ -151,5 +138,9 @@ h1{
 
     .job-title {
         font-size: 20px;
+    }
+
+    .myskills{
+        flex-direction: column;
     }
 }
